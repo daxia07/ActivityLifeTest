@@ -19,6 +19,12 @@ public class MainActivity extends Activity {
     }
 
     @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i(TAG, "onPause");
+    }
+
+    @Override
     protected void onResume() {
         super.onResume();
         Log.i(TAG, "onResume");
